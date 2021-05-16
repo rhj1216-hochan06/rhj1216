@@ -10,30 +10,46 @@
         android:id="@+id/showLockScreenViewButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="260dp"
         android:text="@string/showLockScreenText"
         app:layout_constraintBottom_toTopOf="@+id/lockScreenSwitchText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081" />
 
     <TextView
         android:id="@+id/lockScreenSwitchText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/lc_switch_textsize"
         android:text="@string/lockScreenSwitchText"
+        android:textSize="@dimen/lc_switch_textsize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.906" />
 
     <Switch
-        android:id="@+id/lockScreeSwitch"
+        android:id="@+id/lockScreenSwitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lockScreenSwitchText" />
+
+    <Button
+        android:id="@+id/Playbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="youtube"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
 
 </android.support.constraint.ConstraintLayout>

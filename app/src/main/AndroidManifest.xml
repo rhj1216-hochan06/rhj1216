@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.lockscreen.hanmo.lockscreenkotlinexample">
+    package="com.lockscreen.test.lockscreenkotlinexample">
 
     <!--LockScreen Permission-->
     <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
@@ -10,7 +10,7 @@
 
 
     <application
-        android:name=".LockScreenApplication"
+        android:name="com.lockscreen.test.lockscreenkotlinexample.LockScreenApplication"
         android:allowBackup="false"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,7 +18,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.lockscreen.test.lockscreenkotlinexample.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,15 +26,15 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".lockscreen.LockScreenActivity"
+        <activity android:name="com.lockscreen.test.lockscreenkotlinexample.lockscreen.LockScreenActivity"
             android:showOnLockScreen="true"
             android:launchMode="singleInstance"
             android:theme="@style/lockscreenView"/>
 
-        <service android:name=".lockscreen.service.LockScreenService" />
+        <service android:name="com.lockscreen.test.lockscreenkotlinexample.lockscreen.service.LockScreenService" />
 
         <receiver
-            android:name=".receiver.PackageReceiver"
+            android:name="com.lockscreen.test.lockscreenkotlinexample.receiver.PackageReceiver"
             android:exported="true">
             <intent-filter android:priority="9999">
                 <action android:name="android.intent.action.PACKAGE_ADDED"/>
@@ -45,7 +45,7 @@
         </receiver>
 
         <receiver
-            android:name=".receiver.BootReceiver"
+            android:name="com.lockscreen.test.lockscreenkotlinexample.receiver.BootReceiver"
             android:enabled="true"
             android:exported="false"
             android:label="BOOTReceiver">

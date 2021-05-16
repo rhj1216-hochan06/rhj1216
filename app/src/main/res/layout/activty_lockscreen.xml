@@ -61,7 +61,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
-            <com.lockscreen.hanmo.lockscreenkotlinexample.lockscreen.util.ButtonUnLock
+            <com.lockscreen.test.lockscreenkotlinexample.lockscreen.util.ButtonUnLock
                 android:id="@+id/swipeUnLockButton"
                 android:padding="1dp"
                 android:layout_width="match_parent"
