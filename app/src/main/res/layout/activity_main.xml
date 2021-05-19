@@ -41,16 +41,16 @@
         app:layout_constraintTop_toBottomOf="@+id/lockScreenSwitchText" />
 
     <Button
-        android:id="@+id/Youtubebutton"
+        android:id="@+id/OtherAppsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="youtube"
+        android:text="OtherApps"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintHorizontal_bias="0.123"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.319" />
 
     <Button
         android:id="@+id/Calculatorbutton"
@@ -59,8 +59,21 @@
         android:text="Calculator"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.802"
-        app:layout_constraintStart_toEndOf="@+id/Youtubebutton"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.761"
+        app:layout_constraintStart_toEndOf="@+id/OtherAppsButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.319" />
+
+    <Button
+        android:id="@+id/FaceRecognitionbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FaceRecognition"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
 
 </android.support.constraint.ConstraintLayout>

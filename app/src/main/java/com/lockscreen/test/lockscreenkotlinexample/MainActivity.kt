@@ -26,8 +26,9 @@ class MainActivity : AppCompatActivity() {
         initLockScreenSwitch()
         setChangeLockScreenSwitch()
         setShowLockScreenButton()
-        setYoutubebutton()
-        setCalculatorbutton()
+        setOtherAppsbutton()
+        setVoicerecognitionbutton()
+        setFaceRecognitionbutton()
 
     }
 
@@ -68,23 +69,37 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    private fun setYoutubebutton() {
-        Youtubebutton.setOnClickListener {
-            Toast.makeText(applicationContext, "youtube버튼이 눌러졌습니다.", Toast.LENGTH_LONG).show()
-            val intent = packageManager.getLaunchIntentForPackage("com.google.android.youtube")
+    private fun setOtherAppsbutton() {
+        OtherAppsButton.setOnClickListener {
+            Toast.makeText(applicationContext, "OtherApps버튼이 눌러졌습니다.", Toast.LENGTH_LONG).show()
+            val nextIntent = Intent(this, OtherApps::class.java)
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-            startActivity(intent)
+            startActivity(nextIntent)
+
         }
     }
-    private fun setCalculatorbutton() {
+    private fun setVoicerecognitionbutton() {
         Calculatorbutton.setOnClickListener {
-            Toast.makeText(applicationContext, "Calculatorbutton이 눌러졌습니다.", Toast.LENGTH_LONG).show()
+            Toast.makeText(applicationContext, "Voicerecognition이 눌러졌습니다.", Toast.LENGTH_LONG).show()
             val intent = packageManager.getLaunchIntentForPackage("com.N5_team.Calculator")
+            //수정할것
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent)
         }
 
     }
+    private fun setFaceRecognitionbutton() {
+        Calculatorbutton.setOnClickListener {
+            Toast.makeText(applicationContext, "FaceRecognition이 눌러졌습니다.", Toast.LENGTH_LONG).show()
+            val intent = packageManager.getLaunchIntentForPackage("com.N5_team.Calculator")
+            //수정할것
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            startActivity(intent)
+        }
+
+    }
+
+
 
 }
 
