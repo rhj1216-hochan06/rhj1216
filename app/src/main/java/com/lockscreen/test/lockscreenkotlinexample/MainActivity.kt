@@ -26,7 +26,9 @@ class MainActivity : AppCompatActivity() {
         initLockScreenSwitch()
         setChangeLockScreenSwitch()
         setShowLockScreenButton()
-        setPlaybutton()
+        setYoutubebutton()
+        setCalculatorbutton()
+
     }
 
     private fun setShowLockScreenButton() {
@@ -66,15 +68,23 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    private fun setPlaybutton() {
-        Playbutton.setOnClickListener {
+    private fun setYoutubebutton() {
+        Youtubebutton.setOnClickListener {
             Toast.makeText(applicationContext, "youtube버튼이 눌러졌습니다.", Toast.LENGTH_LONG).show()
             val intent = packageManager.getLaunchIntentForPackage("com.google.android.youtube")
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent)
         }
     }
+    private fun setCalculatorbutton() {
+        Calculatorbutton.setOnClickListener {
+            Toast.makeText(applicationContext, "Calculatorbutton이 눌러졌습니다.", Toast.LENGTH_LONG).show()
+            val intent = packageManager.getLaunchIntentForPackage("com.N5_team.Calculator")
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            startActivity(intent)
+        }
 
+    }
 
 }
 

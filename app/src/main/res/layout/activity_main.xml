@@ -41,7 +41,7 @@
         app:layout_constraintTop_toBottomOf="@+id/lockScreenSwitchText" />
 
     <Button
-        android:id="@+id/Playbutton"
+        android:id="@+id/Youtubebutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="youtube"
@@ -51,5 +51,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499" />
+
+    <Button
+        android:id="@+id/Calculatorbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.802"
+        app:layout_constraintStart_toEndOf="@+id/Youtubebutton"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
