@@ -79,7 +79,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
     private fun setVoicerecognitionbutton() {
-        Calculatorbutton.setOnClickListener {
+        Voicerecognitionbutton.setOnClickListener {
             Toast.makeText(applicationContext, "Voicerecognition이 눌러졌습니다.", Toast.LENGTH_LONG).show()
             val intent = packageManager.getLaunchIntentForPackage("com.N5_team.Calculator")
             //수정할것
@@ -89,7 +89,7 @@ class MainActivity : AppCompatActivity() {
 
     }
     private fun setFaceRecognitionbutton() {
-        Calculatorbutton.setOnClickListener {
+        FaceRecognitionbutton.setOnClickListener {
             Toast.makeText(applicationContext, "FaceRecognition이 눌러졌습니다.", Toast.LENGTH_LONG).show()
             val intent = packageManager.getLaunchIntentForPackage("com.N5_team.Calculator")
             //수정할것
