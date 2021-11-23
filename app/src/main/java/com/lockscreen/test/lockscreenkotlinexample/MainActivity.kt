@@ -81,15 +81,15 @@ class MainActivity : AppCompatActivity() {
     private fun setVoicerecognitionbutton() {
         Voicerecognitionbutton.setOnClickListener {
             Toast.makeText(applicationContext, "Voicerecognition이 눌러졌습니다.", Toast.LENGTH_LONG).show()
-            val intent = packageManager.getLaunchIntentForPackage("com.example.myapplication_speak")
+            val intent = packageManager.getLaunchIntentForPackage("com.example.stttest")
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent)
         }
 
     }
     private fun setFaceRecognitionbutton() {
-        FaceRecognitionbutton.setOnClickListener {
-            Toast.makeText(applicationContext, "FaceRecognition이 눌러졌습니다.", Toast.LENGTH_LONG).show()
+        calculator.setOnClickListener {
+            Toast.makeText(applicationContext, "계산기앱이 눌러졌습니다.", Toast.LENGTH_LONG).show()
             val intent = packageManager.getLaunchIntentForPackage("com.N5_team.Calculator")
             //수정할것
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
