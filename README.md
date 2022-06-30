@@ -7,3 +7,5 @@ kotlin으로 구현한 안드로이드 잠금화면 Example (Oreo 대응)
 ## Description of the source
 [My medium post](https://medium.com/@dlgksah/waterpin-technical-stack-3-lockscreen-b442217c9f57)
 
+
+hanmolee HanmoLee 의 작업을 수정하여 프로젝트를 진행함
